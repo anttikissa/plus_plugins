@@ -30,7 +30,12 @@ dependencies:
     sdk: flutter
   connectivity_plus_platform_interface: ^1.2.0
   connectivity_plus_linux: ^1.3.0
-  connectivity_plus_macos: ^1.2.3
+  connectivity_plus_macos:
+    git:
+      url: https://github.com/anttikissa/plus_plugins
+      # contains fix "flutter hot restart on macos results in crash"
+      ref: afc3e8fa24dfd646cabf99fa267360f5129969f3
+      path: packages/connectivity_plus/connectivity_plus_macos
   connectivity_plus_web: ^1.2.0
   connectivity_plus_windows: ^1.2.2
 
